@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Preview Card Component Main</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: hsl(30, 38%, 92%);
+        }
+        .box {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 450px;
+            border-radius: 10px;
+            background-color: hsl(0, 0%, 100%);
+        }
+        img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px 0 0 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+            padding: 30px;
+        }
+        .content .product {
+            font: 500 14px Montserrat;
+            color: hsl(228, 12%, 48%);
+            letter-spacing: 0.5em;
+        }
+        .content .title {
+            font: 700 32px/1 'Fraunces 9pt Black';
+            color: hsl(212, 21%, 14%);
+        }
+        .content .text {
+            font: 500 14px/1.5 Montserrat;
+            color: hsl(228, 12%, 48%);
+        }
+        .content .price span {
+            font: 700 32px/1 'Fraunces 9pt Black';
+            color: hsl(158, 36%, 37%);
+        }
+        .content .price del {
+            display: inline-block;
+            margin-left: 10px;
+            font: 500 14px Montserrat;
+            color: hsl(228, 12%, 48%);
+        }
+        .content .add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 240px;
+            height: 50px;
+            background-color: hsl(158, 36%, 37%);
+            border-radius: 8px;
+        }
+        .content .add span {
+            display: inline-block;
+            margin-left: 10px;
+            font: 500 14px Montserrat;
+            color: hsl(0, 0%, 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image-product-desktop.jpg" alt="">
+        <div class="content">
+            <p class="product">PERFUME</p>
+            <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+            <p class="text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+            <p class="price">
+                <span >$149.99</span>
+                <del>$169.99</del>
+            </p>
+            <div class="add">
+                <!-- <i class="iconfont icon-cart"></i> -->
+                 <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+                <span>Add to Cart</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
